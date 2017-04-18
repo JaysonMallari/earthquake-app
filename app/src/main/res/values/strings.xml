@@ -18,4 +18,5 @@
     <string name="default_magnitute">8.9</string>
     <string name="default_location">San Francisco, Ca</string>
     <string name="default_date">March 06, 2010</string>
+    <string name="near_the">Near the</string>
 </resources>

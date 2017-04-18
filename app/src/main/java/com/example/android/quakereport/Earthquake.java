@@ -7,24 +7,27 @@ package com.example.android.quakereport;
 public class Earthquake {
 
     /** Magnitude of the earthquake*/
-    private String mMagnitude;
+    private double mMagnitude;
 
     /** Location of the earthquake */
     private String mLocation;
 
     /** Date of the earthquake */
-    private String mDate;
+    private long mTimeInMilliseconds;
+
+    /** magnitudeColor Resource ID */
+
 
     /**
      *  Construct a new earthquake object
      * @param magnitude
      * @param location
-     * @param date
+     * @param timeInMilliseconds
      */
-    public Earthquake(String magnitude, String location, String date){
+    public Earthquake(Double magnitude, String location, long timeInMilliseconds){
         mMagnitude = magnitude;
         mLocation = location;
-        mDate = date;
+        mTimeInMilliseconds = timeInMilliseconds;
 
     }
 
@@ -32,7 +35,7 @@ public class Earthquake {
      *  return the magnitude of the earthquake
      * @return
      */
-    public String getmMagnitude(){
+    public double getmMagnitude(){
         return  mMagnitude;
     }
 
@@ -48,7 +51,7 @@ public class Earthquake {
      *  return the date of the earthquake
      * @return
      */
-    public  String getmDate(){
-        return mDate;
+    public  long getmTimeInMilliseconds(){
+        return mTimeInMilliseconds;
     }
 }
