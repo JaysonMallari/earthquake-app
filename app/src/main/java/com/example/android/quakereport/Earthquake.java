@@ -15,7 +15,8 @@ public class Earthquake {
     /** Date of the earthquake */
     private long mTimeInMilliseconds;
 
-    /** magnitudeColor Resource ID */
+    /** url of the earthquake */
+    private String mUrl;
 
 
     /**
@@ -23,12 +24,22 @@ public class Earthquake {
      * @param magnitude
      * @param location
      * @param timeInMilliseconds
+     *
      */
-    public Earthquake(Double magnitude, String location, long timeInMilliseconds){
+    public Earthquake(Double magnitude, String location, long timeInMilliseconds, String url){
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMilliseconds = timeInMilliseconds;
+        mUrl = url;
 
+    }
+
+    /**
+     *  retunt url of the earthquake
+     * @return
+     */
+    public String getmUrl(){
+        return mUrl;
     }
 
     /**
